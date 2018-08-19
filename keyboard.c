@@ -176,7 +176,7 @@ int main(int argc, char *argv[]) {
 	}
 	struct uinput_user_dev uidev;
 	memset(&uidev, 0, sizeof(uidev));
-	snprintf(uidev.name, UINPUT_MAX_NAME_SIZE, "retrogame");
+	snprintf(uidev.name, UINPUT_MAX_NAME_SIZE, "keyboard");
 	uidev.id.bustype = BUS_USB;
 	uidev.id.vendor  = 0x1;
 	uidev.id.product = 0x1;
